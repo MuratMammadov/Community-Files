@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--tertiaryColor);
+}
+
+:root {
+    --primaryColor: #FE5D36;
+    --secondaryColor: #0F2F37;
+    --tertiaryColor: #FFF5F3;
+}
+a {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+.wrapper {
+    width: 90%;
+    margin:auto;
+    height: 100%;
+    background-color: white;
+    padding-bottom: 100px;
+}
+.row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.nav {
+    padding: 10px 30px;
+}
+
+.nav h1, .logoIcon {
+    font-size: 40px;
+    color: var(--primaryColor);
+}
+.nav h1 {
+    padding-left: 15px;
+}
+.navLeft {
+    display: flex;
+    align-items: center;
+}
+
+li {
+    font-size: 16px;
+    color: var(--secondaryColor);
+    padding: 0 10px;
+    cursor: pointer;
+}
+li:hover {
+    color: var(--primaryColor);
+}
+
+.navRight {
+    font-size: 16px;
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 15px;
+    padding: 10px 15px;
+}
+
+.navRight i {
+    padding-left: 10px;
+}
+
+/* Home Page Style */
+
+.homePageContainer {
+    position: relative;
+}
+
+.homePageContainer h1, 
+.homePageContainer p, 
+.homePageContainerLinks {
+    position: absolute;
+    left: 1.5%;
+}
+.homePageContainer h1 {
+    font-size: 55px;
+    color: white;
+    top: 30%;
+}
+
+.homePageContainer p {
+    color: white;
+    font-size: 20px;
+    top: 50%;
+}
+
+.homePageContainerLinks {
+    display: flex;
+    align-items: center;
+    top: 65%;
+}
+
+.homePageContainerLinks a {
+    padding: 15px 40px;
+    background-color: var(--primaryColor);
+    color: white;
+    border-radius: 25px;
+}
+.homePageContainerLinks a:nth-child(2) {
+    margin-left: 15px;
+    background-color: var(--secondaryColor);
+}
+
+
+/* Facilities Style */
+
+.facilities {
+    margin-top: 50px;
+}
+.facilitiesArticle h2,
+.facilitiesArticle p {
+    text-align: center;
+}
+.facilitiesArticle h2 {
+    font-size: 40px;
+    color: var(--secondaryColor);
+}
+
+
+.facilitiesArticle p {
+    font-size: 16px;
+    color: #74787c;
+    padding-top: 15px;
+}
+.facilitesBoxes {
+    padding: 30px 20px;
+}
+.facilitesBoxesContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.facilitiesBoxesHeader {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--tertiaryColor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  z-index: 3000;
+  transition: 1s ease;
+}
+
+.leftHeader, .rightHeader {
+    position: absolute;
+    width: 15px;
+    height: 30px;
+    background-color: var(--tertiaryColor);
+    border-radius: 50%;
+    transition: 1s ease;
+}
+
+.leftHeader {
+    top: 0;
+    left: 0px;
+}
+.rightHeader {
+    top: 0px;
+    right: 0px;
+}
+.facilitiesBoxesHeader i {
+    font-size: 24px;
+}
+
+.facilitesBoxesBody{
+    background-color: var(--tertiaryColor);
+    width: 250px;
+    height: 200px;
+    border-radius: 60%;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 1s ease;
+}
+
+
+.facilitesBoxesContainer:hover .leftHeader,
+.facilitesBoxesContainer:hover .rightHeader,
+.facilitesBoxesContainer:hover .facilitesBoxesBody,
+.facilitesBoxesContainer:hover .facilitiesBoxesHeader {
+    background-color: var(--primaryColor);
+    color: white;
+    transition: 1s ease;
+}
+
+/* About Section */
+.aboutLeftContainer {
+    width: 50%;
+}
+.profilePhoto {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-size: cover;
+}
+
+.readMoreBtn {
+    border: none;
+    outline: none;
+    padding: 20px 40px;
+    background-color: var(--primaryColor);
+    border-radius: 25px;
+    color: white;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    cursor: pointer;
+}
+
+.aboutRightContainer {
+    position: relative;
+    right: 5%;
+}
+.aboutRightContainer div img { 
+   border-radius: 50%;
+   border: 15px solid red;
+}
+.secondPhoto {
+    position: absolute;
+    left: -80px;
+    bottom: -150px;
+}
+
+.thirdPhoto {
+    position: absolute;
+    right: -80px;
+    bottom: -150px;
+}
+.firstPhoto img {
+  width: 400px;
+  height: 350px;
+}
+
+.secondPhoto  img{
+    width: 200px;
+    height: 200px;
+}
+.thirdPhoto  img{
+    width: 200px;
+    height: 200px;
+}
+
+.aboutFooter {
+    margin-top: 40px;
+}
+.profilePhotoContent {
+    padding-left: 10px;
+}
